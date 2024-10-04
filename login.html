@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meteor Tech Company - Iniciar Sesión / Registrarse</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="./Logo.png" alt="Meteor Tech Company Logo">
+        </div>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servidores.html">Servidores</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html" class="btn-login active">Iniciar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-grid">
+                <div class="auth-form login-form">
+                    <h2>Iniciar Sesión</h2>
+                    <form id="login-form">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="login-password">Contraseña</label>
+                            <input type="password" id="login-password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="remember-me" name="remember-me">
+                            <label for="remember-me">Recordarme</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+                    </form>
+                    <p class="auth-link">¿Olvidaste tu contraseña? <a href="#" id="forgot-password-link">Recupérala aquí</a></p>
+                </div>
+                <div class="auth-form register-form">
+                    <h2>Registrarse</h2>
+                    <form id="register-form">
+                        <div class="form-group">
+                            <label for="register-name">Nombre Completo</label>
+                            <input type="text" id="register-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-email">Email</label>
+                            <input type="email" id="register-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-password">Contraseña</label>
+                            <input type="password" id="register-password" name="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="register-confirm-password">Confirmar Contraseña</label>
+                            <input type="password" id="register-confirm-password" name="confirm-password" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="terms-conditions" name="terms-conditions" required>
+                            <label for="terms-conditions">Acepto los <a href="#">Términos y Condiciones</a></label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="auth-benefits">
+        <div class="container">
+            <h2>Beneficios de unirse a Meteor Tech Company</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <i class="fas fa-server"></i>
+                    <h3>Acceso a Servidores Premium</h3>
+                    <p>Obtén acceso exclusivo a nuestros servidores de alto rendimiento.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Cursos Exclusivos</h3>
+                    <p>Accede a cursos y contenido exclusivo para miembros.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-comments"></i>
+                    <h3>Soporte Prioritario</h3>
+                    <p>Recibe asistencia técnica prioritaria de nuestro equipo de expertos.</p>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-percentage"></i>
+                    <h3>Descuentos Especiales</h3>
+                    <p>Disfruta de descuentos exclusivos en nuestros productos y servicios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="./Logo.png" alt="Meteor Tech Company Logo">
+        </div>
+        <div class="footer-links">
+            <h4>Enlaces Rápidos</h4>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servidores.html">Servidores</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contáctanos</h4>
+            <p>Email: meteortechcompany@gmail.com</p>
+            <p>Teléfono: +54 2964 493431</p>
+        </div>
+        <div class="footer-social">
+            <h4>Síguenos</h4>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Meteor Tech Company. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
